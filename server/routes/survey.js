@@ -34,14 +34,11 @@ router.get('/add',async(req,res,next)=>{
 router.post('/add',async(req,res,next)=>{
     try{
         let newSurvey = Survey({
-            "First":req.body.First,
-            "Last":req.body.Last,
-            "dob":req.body.Last,
-            "Gender":req.body.Last,
-            "Hair_color":req.body.Last,
-            "Occupation":req.body.Occupation,
-            "Nationality":req.body.Nationality,
-            "Height_cm":req.body.Height_cm,
+            "Customer_Name":req.body.Customer_Name,
+            "Product_Name":req.body.Product_Name,
+            "Purchase_Date":req.body.Purchase_Date,
+            "Description":req.body.Description,
+            "Product_Price":req.body.Product_Price,
 
         });
         Survey.create(newSurvey).then(()=>{
@@ -77,14 +74,11 @@ router.post('/edit/:id',async(req,res,next)=>{
         let id = req.params.id;
         let updatedSurvey = Survey({
             "_id":id,
-            "First":req.body.First,
-            "Last":req.body.Last,
-            "dob":req.body.dob,
-            "Gender":req.body.Gender,
-            "Hair_color":req.body.Hair_color,
-            "Occupation":req.body.Occupation,
-            "Nationality":req.body.Nationality,
-            "Height_cm":req.body.Height_cm,
+            "Customer_Name":req.body.Customer_Name,
+            "Product_Name":req.body.Product_Name,
+            "Purchase_Date":req.body.Purchase_Date,
+            "Description":req.body.Description,
+            "Product_Price":req.body.Product_Price,
 
         })
         Survey.findByIdAndUpdate(id,updatedSurvey).then(()=>{

@@ -7,9 +7,7 @@ let SurveyModel = mongoose.Schema({
     dob:String,
     Gender:String,
     Hair_color:String,
-    Occupation:String,
-    Nationality:String,
-    Height_cm:String
+
 },
 {
     collection:"Survey"
