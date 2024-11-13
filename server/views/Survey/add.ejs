@@ -1,0 +1,50 @@
+<%- include ../Partials/header.ejs %>
+<%- include ../Partials/main_nav.ejs %>
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <label for="FirstTextField">Book Title</label>
+                    <input type="text" class="form-control" id="FirstTextField"
+                    placeholder="Enter the C name" name="First" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="LastTextField">Book author</label>
+                    <input type="text" class="form-control" id="LastTextField"
+                    placeholder="Enter the P name" name="Last" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dobTextField">Book Title</label>
+                    <input type="text" class="form-control" id="dobTextField"
+                    placeholder="Enter the P date" name="dob" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="GenderTextField">Book Title</label>
+                    <input type="text" class="form-control" id="GenderTextField"
+                    placeholder="Enter your Description" name="Gender" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Hair_colorTextField">Book Title</label>
+                    <input type="text" class="form-control" id="Hair_colorTextField"
+                    placeholder="Enter your Price" name="Hair_color" required>
+                </div>
+
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i>
+                    Submit</button>
+
+                <a href="/surveyslist" class="btn btn-warning">
+                    <i class="fas fa-undo"></i>Cancel</a>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include ../Partials/footer.ejs %>
