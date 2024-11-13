@@ -101,7 +101,7 @@ router.post('/edit/:id',async(req,res,next)=>{
 // Delete Operation --> Get route for deletion
 router.get('/delete/:id',async(req,res,next)=>{
     try{
-        let id=rew.params.id;
+        let id=req.params.id;
         Survey.deleteOne({_id:id}).then(()=>{
             res.redirect('/surveyslist')
         })
