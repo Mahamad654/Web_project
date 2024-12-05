@@ -1,10 +1,11 @@
 <%- include Partials/header.ejs %>
 <%- include Partials/main_nav.ejs %>
 
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %>.</p>
-    <div class="splash-container">
-        <a href="/surveyslist" class="btn btn-primary splash-button">Go to Survey Page</a>
-    </div>
+<body>
+    <div class="splash-image container-fluid">
 
+        <button class="button-64" href="/surveyslist" role="button"><span class="text">Go to Survey Page</span></button> 
+        <!-- <a href="/surveyslist" class="splash-button">Go to Survey Page</a> -->
+    </div>
+</body>
 <%- include Partials/footer.ejs %>
