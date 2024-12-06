@@ -28,7 +28,7 @@
 .button-64 {
   align-items: center;
   left: 30rem ;
-  bottom: 10rem ;
+  bottom: 8rem ;
   position: absolute;
   background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
   border: 0;
@@ -95,7 +95,7 @@
 h1{
     display: flex;
     left: 60%;
-    top: 15%;
+    top: 12%;
     margin-left: -25%;
     position: absolute;
     /* margin-top: -25%; */
@@ -146,14 +146,14 @@ h1{
 
 }
 
-/* .container{
-    display: flex;
-    width: 80% !important;
-    top: 15%;
-    margin-left: -25%;
-    position: absolute;
-    margin-top: -25%;
-    flex-direction: column;
-    align-items: center;
+.table{
+  display: flex;
+  width: 90%;
+  top: 25%;
+  margin-left: -25%;
+  position: absolute;
+  /* margin-top: -25%; */
+  flex-direction: column;
+  align-items: center;
 
-} */
+}
